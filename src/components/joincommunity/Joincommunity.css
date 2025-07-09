@@ -1,0 +1,307 @@
+/* JoinCommunity.css */
+
+.join-section {
+  padding: 5rem 0 3.1rem;
+  background-color: #fff;
+}
+
+.container {
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+.container span{
+  display: block;
+}
+
+.section-title  {
+  text-align: center;
+  font-size: 2.2rem;
+  font-family: "Montagu Slab", serif;
+  font-weight: 600;
+  margin-bottom: 4rem;
+}
+
+
+
+.join-box {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+}
+
+.half-width {
+  width: 100%;
+}
+
+.card {
+  background-color: #f6f6f6;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.card-title {
+  font-size: 1.9rem;
+  font-family: "Montagu Slab", serif;
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+.card-Member-title{
+  font-size: 1.9rem;
+  font-family: "Montagu Slab", serif;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.card .card-title span,
+.card .card-Member-title span {
+  display: block;
+}
+.role-selection{
+  margin-bottom: 1rem;
+}
+.role-selection label{
+  margin-right: 1rem;
+}
+.role{
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: "Noto Sans", sans-serif;
+  margin-right: 0.5rem;
+}
+.radio{
+  transform: scale(1.5);
+  accent-color: #195dd4;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+   font-family: "Noto Sans", sans-serif;
+}
+
+form input,
+form textarea {
+  width: 95%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s;
+   font-family: "Noto Sans", sans-serif;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #195dd4;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  margin-top: 0.9rem;
+  cursor: pointer;
+  flex-wrap: nowrap;
+width: fit-content;
+white-space: nowrap;
+}
+.custom-checkbox{
+  margin-top: 0.3rem;
+  transform: scale(1.5);
+  accent-color: #195dd4;
+}
+.checkbox-label span {
+   font-family: "Noto Sans", sans-serif;
+}
+
+
+.error{
+  color: #e2142c;
+  font-size: 0.8rem;
+  margin-bottom: 0.3rem;
+  display: block;
+   font-family: "Noto Sans", sans-serif;
+}
+
+.send-button {
+  background-color: #195dd4;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100%;
+   font-family: "Noto Sans", sans-serif;
+}
+
+.send-button:hover {
+  opacity: 0.9;
+}
+.membership-form button {
+  background-color: #195dd4;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100%;
+   font-family: "Noto Sans", sans-serif;
+}
+
+.membership-form button:hover {
+   opacity: 0.9;
+}
+
+.error-message{
+  color: #e2142c;
+  font-size: 0.8rem;
+  margin-bottom: 0.3rem;
+  display: block;
+   font-family: "Noto Sans", sans-serif;
+}
+
+
+/* Up to 1000px: column layout */
+@media screen and (max-width: 1000px) {
+  .container{
+    flex-direction: column;
+  }
+  .join-box {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 100%;
+    padding: 1.2rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  .card-title{
+    font-size: 1.5rem;
+  }
+  .card-Member-title{
+    font-size: 1.5rem;
+  }
+}
+
+/* Above 1000px: row layout */
+@media screen and (min-width: 1001px) and (max-width:1339px) {
+  .join-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .half-width {
+    width: 48%; /* ✅ Make room for two side by side */
+  }
+
+  .card {
+    width: 100%; /* keep this for internal form layout */
+    max-width: 100%;
+    padding: 2rem;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }}
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
+  .container{
+    margin-top: 0;
+    gap: 0;
+    flex-direction: column;
+  }
+
+  .join-box {
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+
+  .card {
+    padding: 1.2rem;
+  }
+
+  .card-title,
+  .card-Member-title {
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+  }
+
+  form label {
+    font-size: 0.9rem;
+  }
+
+  form input,
+  form textarea {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 0.6rem 0.9rem;
+  }
+
+  .checkbox-label {
+    font-size: 0.9rem;
+    flex-wrap: wrap;
+    white-space: normal;
+  }
+
+  .send-button,
+  .membership-form button {
+    font-size: 0.95rem;
+    padding: 0.6rem 1rem;
+  }
+} 
+
+
+
+
+
+/* ✅ Place fix here, after everything */
+
+
+
+
+

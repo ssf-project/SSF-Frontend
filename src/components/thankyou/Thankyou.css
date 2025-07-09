@@ -1,0 +1,53 @@
+.thankyou-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f6f6f6;
+}
+
+.thankyou-box {
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+}
+.thankyou-box span{
+    display: block;
+}
+
+.thankyou-box .heading {
+  font-size: 2.2rem;
+  color: #195dd4;
+  font-family: "Montagu Slab", serif;
+  font-weight: 600;
+}
+
+.thankyou-box .text {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  color: #333;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.gratitude-message {
+  margin-top: 1.5rem;
+  font-weight: bold;
+  color: #e2142c;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.back-home {
+  display: inline-block;
+  margin-top: 2rem;
+  color: #195dd4;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.back-home:hover {
+  text-decoration: underline;
+}

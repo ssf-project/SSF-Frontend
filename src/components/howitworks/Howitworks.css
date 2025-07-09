@@ -1,0 +1,53 @@
+.how-wrapper {
+  padding: 3.75rem 1.25rem;
+  background-color: #ffffff;
+  text-align: center;
+  box-sizing: border-box;
+  margin-bottom: 1.9rem;
+}
+
+.how-title {
+  display: block;
+  font-family: "Montagu Slab", serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+  margin-top: 1.25rem;
+  color: #222;
+}
+
+.how-steps {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.how-card {
+  width: 22%;
+  min-width: 16rem;
+  text-align: center;
+}
+
+.circle {
+  background-color: #195dd4;
+  color: white;
+  width: 3.1rem;
+  height: 3.1rem;
+  line-height: 50px;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 0 auto 0.9rem auto;
+}
+
+.how-card span {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
+

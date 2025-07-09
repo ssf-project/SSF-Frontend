@@ -1,0 +1,9 @@
+#about,
+#services,
+#howitworks,
+#testimonials,
+#gallery,
+#join {
+  scroll-margin-top: 50px; /* adjust based on your navbar height */
+}
+

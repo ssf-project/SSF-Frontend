@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab&family=Noto+Sans:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  background: linear-gradient(135deg, #f8f9fc, #eef1f6);
+  color: #333;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100dvh;
+}
+
+.page-title-wrapper {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  font-family: "Montagu Slab", serif;
+  margin-top: 1.5rem;
+  display: block;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 3rem;
+  max-width: 1400px;
+  width: 100%;
+}
+
+.panel {
+  width: 600px;
+  min-height: 550px;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.625rem 1.5rem rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.panel-subtitle {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+  text-align: center;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.upi-apps {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.upi-apps img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.qr-code {
+  width: 200px;
+  height: 200px;
+  margin: 1rem auto;
+}
+
+.donate-button {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #195dd4;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.donate-button:hover {
+  opacity: 0.9;
+}
+
+.panel ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-top: 0.5rem;
+}
+
+.panel li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.panel li::before {
+  content: '✔️';
+  position: absolute;
+  left: 0;
+  top: 2px;
+  color: #6a0dad;
+  font-size: 1rem;
+}
+
+
