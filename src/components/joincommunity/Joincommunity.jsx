@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -108,15 +109,9 @@ function Joincommunity() {
 };
 
         console.log("Sending body to backend:",body);
-        const response = await fetch(endpoint, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(body),
-        });
+        const response = await axios.post(endpoint, body);
 
-        const data = await response.json();
+        const data = response.data;
         if (data.success) {
           toast.success("Form submitted successfully!");
           setMembershipForm({name:"",phone:"",address:"",qualification:"",amount:"",agree:false,});
@@ -201,14 +196,15 @@ const handleSubmit = (e) => {
   setErrors(foundErrors);
 
   if (Object.keys(foundErrors).length === 0) {
-    fetch("https://ssf-backend-r7od.onrender.com/api/contact", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ ...formData, phone: "+91" + formData.phone }),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        if (data.success) {
+    
+  axios.post(`${import.meta.env.VITE_API_BASE_URL}/api/contact`, {
+    ...formData,
+    phone: "+91" + formData.phone,
+  })
+  .then((res) => {
+    const data = res.data;
+    if (data.success) {
+ 
           toast.success("Message sent successfully!");
           setFormData({
             fullName: "",
