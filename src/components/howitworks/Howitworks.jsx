@@ -4,22 +4,22 @@ import "./Howitworks.css";
 const steps = [
   {
     number: "1",
-    title: "Sign Up",
+    title: "Sign Up ",
     description: "Create your account and complete your student profile with your interests and goals.",
   },
   {
     number: "2",
-    title: "Get Matched",
+    title: "Get Matched ",
     description: "Our system connects you with mentors, resources, and opportunities aligned with your needs.",
   },
   {
     number: "3",
-    title: "Engage",
+    title: "Engage ",
     description: "Participate in workshops, mentoring sessions, and community events.",
   },
   {
     number: "4",
-    title: "Grow",
+    title: "Grow ",
     description: "Track your progress, build your network, and achieve your academic and career goals.",
   },
 ];

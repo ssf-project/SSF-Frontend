@@ -293,7 +293,13 @@ white-space: nowrap;
     font-size: 0.95rem;
     padding: 0.6rem 1rem;
   }
+  .custom-checkbox{
+
+  margin-right:250px;
+  transform: scale(1);
+  accent-color: #195dd4;
 } 
+}
 
 
 

@@ -6,29 +6,29 @@
   padding: 5.6rem 2.5rem 1.25rem;
   color: white;
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   margin-top: 3.75rem;
 }
-
 
 .heading1 {
   font-size: 3.3rem;
   margin-bottom: 7.5rem;
   font-family: "Montagu Slab", serif;
+  font-weight: 600;
   margin-left: 2.5rem;
-  font-weight:600;
 }
 
-.subtitle2{
+.subtitle2 {
   font-size: 1.6rem;
   margin-bottom: 1.9rem;
-  margin-left: 2.5rem;
   font-family: "Noto Sans", sans-serif;
-  margin-left: 0px;
 }
 
 .hero-buttons {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .member-button {
@@ -39,9 +39,7 @@
   border-radius: 0.4rem;
   font-weight: bold;
   cursor: pointer;
-  margin-left: 2.5rem;
   font-family: "Noto Sans", sans-serif;
-  margin-left: 0px;
   margin-top: 1.8rem;
   font-size: 1.2rem;
 }
@@ -69,133 +67,140 @@
 
 .hero-image {
   flex: 1;
+  margin-top: 0;
 }
 
-.help{
+.hero-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.help {
   margin-top: 1.2rem;
-  margin-left: 2.5rem;
   font-family: "Noto Sans", sans-serif;
-  font-size:2.2rem;
-  margin-left: 0px;
-  margin-bottom:1rem ;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
 }
 
-
-/* width:1024pc*/
-/* @media  (min-width:1024px){
-  .hero{
-    padding: 5.6rem 4.5rem 1.25rem;
-  }
-  .heading1{
-    font-size: 3rem;
-  }
-  .subtitle2{
-    font-size: 1.5rem;
-  }
-  .member-button{
-    margin-top: 1rem;
-  }
-} */
-
+/* ----------------------------- */
+/* 📱 Mobile (≤ 480px) */
 @media (max-width: 480px) {
   .hero {
     flex-direction: column;
     padding: 2rem 1rem;
     height: auto;
     text-align: center;
+    background-image: none !important;
+    background-color: #034160 !important;
   }
 
   .heading1 {
-    font-size: 2rem;
+    font-size: 1.7rem;
+    line-height: 2.2rem;
+    margin: 1rem 0;
     width: 100%;
-    margin-left: 0;
-    margin-bottom: 2rem;
   }
 
   .subtitle2 {
     font-size: 1rem;
-    margin-left: 0;
-    text-align: center;
+    line-height: 1.5rem;
+    margin: 0.5rem 0;
   }
 
   .help {
-    font-size: 1.2rem;
-    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
   }
 
   .hero-buttons {
     flex-direction: column;
     align-items: center;
     gap: 12px;
+    width: 100%;
   }
 
   .member-button,
   .learn-btn {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    padding: 10px 16px;
     width: 100%;
-    margin-left: 0;
   }
 
   .hero-image {
-    margin-top: 2rem;
     width: 100%;
+    margin-top: 1.5rem;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 }
-
-
 
 /* ----------------------------- */
 /* 📲 Tablet (481px - 767px) */
 @media (min-width: 481px) and (max-width: 767px) {
   .hero {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;         
+    align-items: center;
     text-align: center;
     padding: 3rem 2rem;
     height: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   .heading1 {
     font-size: 2.4rem;
+    margin-bottom: 1.5rem;
     width: 100%;
-    margin-left: 0;
-    text-align: center;
-    align-items: center;
-    margin-bottom: 3rem;
   }
 
   .subtitle2 {
     font-size: 1.3rem;
-    text-align: center;
-    width: 100%;
+    margin-bottom: 1rem;
   }
 
   .help {
-    font-size: 1.5rem;
-    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
   }
 
   .hero-buttons {
     justify-content: center;
+    flex-direction: row;
+    gap: 15px;
     flex-wrap: wrap;
   }
 
   .member-button,
   .learn-btn {
     font-size: 1.1rem;
-    margin-left: 0;
+    padding: 10px 24px;
+  }
+
+  .hero-image {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 }
-
-
-
 
 /* ---------------------------------- */
 /* 💻 Small Laptop (768px - 1023px) */
 @media (min-width: 768px) and (max-width: 1023px) {
   .hero {
-    padding: 4rem 1.5rem 2.5rem 15rem ;
+    padding: 4rem 1.5rem 2.5rem 15rem;
     height: auto;
   }
 
@@ -215,16 +220,12 @@
     font-size: 1.8rem;
   }
 
-  .member-button
-  {
+  .member-button {
     font-size: 1.1rem;
     margin-left: 0;
     text-align: center;
   }
 }
-
-
-
 
 /* ----------------------------- */
 /* 🖥️ Large Laptop/Desktop (1024px - 1439px) */

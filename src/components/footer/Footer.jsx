@@ -103,7 +103,7 @@ function Footer() {
               <FaLocationDot /> Prakash nagar, Begumpet, Hyderabad
             </span>
             <span>
-              <FaEnvelope /> stdntsspprtfrc@gmail.com
+              <FaEnvelope /> founder@studentsupportforce.com
             </span>
             <span>
               <FaPhone /> +91 6301680400
