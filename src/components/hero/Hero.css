@@ -84,6 +84,27 @@
   margin-bottom: 1rem;
 }
 
+/* New Styles Added Below */
+.stats-line {
+  margin: 1rem 0;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+  font-size: 2.2rem;
+  opacity: 0.8;
+  display: block;
+}
+
+.financial-crisis {
+  font-size: 1.6rem;
+  color: #ff6b6b;
+  font-style: italic;
+  margin-top: 0.5rem;
+  line-height: 1.4;
+}
+
 /* ----------------------------- */
 /* 📱 Mobile (≤ 480px) */
 @media (max-width: 480px) {
@@ -138,6 +159,15 @@
     width: 100%;
     height: auto;
     object-fit: cover;
+  }
+
+  /* Mobile adjustments for new styles */
+  .strikethrough {
+    font-size: 1rem;
+  }
+  
+  .financial-crisis {
+    font-size: 0.9rem;
   }
 }
 
@@ -194,33 +224,14 @@
     height: auto;
     object-fit: cover;
   }
-}
-/* Strikethrough style */
-.strikethrough {
-  text-decoration: line-through;
-  opacity: 0.7;
-}
 
-/* Financial note style */
-.financial-note {
-  margin-top: 1.5rem;
-  font-size: 0.9rem;
-  color: #ff9999;
-  font-style: italic;
-  line-height: 1.4;
-}
-
-/* Responsive adjustments */
-@media (max-width: 480px) {
-  .financial-note {
-    font-size: 0.8rem;
-    margin-top: 1rem;
+  /* Tablet adjustments for new styles */
+  .strikethrough {
+    font-size: 1.4rem;
   }
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-  .financial-note {
-    font-size: 0.85rem;
+  
+  .financial-crisis {
+    font-size: 1.1rem;
   }
 }
 
