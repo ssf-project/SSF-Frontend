@@ -12,19 +12,18 @@ function Hero() {
     >
       <div className="heading1">
         <span>Empowering Every Student</span>
-        <span className="subtitle1"></span>
-        <div className="subtitle2">
-          <div className="help">
-            <span className="strikethrough">60+ students educated by SSF in just 4 months</span>
+        <div className="stats-line">
+          <span className="strikethrough">60+ students educated by SSF in just 4 months</span>
+          <div className="financial-crisis">
+            Our situation is so bad, I can't even deal with this organization.<br />
+            I'm not able to pay the office boy's salary
           </div>
+        </div>
+        <div className="subtitle2">
           Join a community that supports your growth
         </div>
         <div className="hero-buttons">
           <a href='#join'><button className="member-button">Become a Member</button></a>
-        </div>
-        <div className="financial-note">
-          Our situation is so bad, I can't even deal with this organization.<br />
-          I'm not able to pay the office boy's salary
         </div>
       </div>
       <div className="hero-image"></div>
