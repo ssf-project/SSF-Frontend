@@ -12,7 +12,7 @@
 }
 
 .heading1 {
-  font-size: 3.3rem;
+  font-size: 2.2rem;
   margin-bottom: 7.5rem;
   font-family: "Montagu Slab", serif;
   font-weight: 600;
@@ -92,13 +92,13 @@
 
 .strikethrough {
   text-decoration: line-through;
-  font-size: 2.2rem;
+  font-size: 1.5rem;
   opacity: 0.8;
   display: block;
 }
 
 .financial-crisis {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   color: #ff6b6b;
   font-style: italic;
   margin-top: 0.5rem;
