@@ -1,4 +1,4 @@
-import React from 'react';
+ import React from 'react';
 import './Hero.css';
 import heroImage from '../../assets/hero.png';
 
@@ -16,7 +16,7 @@ function Hero() {
           <span className="strikethrough">60+ students educated by SSF in just 4 months</span>
           <div className="financial-crisis">
             Our situation is so bad, I can't even deal with this organization.<br />
-            I'm not able to pay the office boy's salary
+            I'm not able to pay even the office boy's salary
           </div>
         </div>
         <div className="subtitle2">
