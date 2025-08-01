@@ -195,6 +195,34 @@
     object-fit: cover;
   }
 }
+/* Strikethrough style */
+.strikethrough {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+/* Financial note style */
+.financial-note {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #ff9999;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .financial-note {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .financial-note {
+    font-size: 0.85rem;
+  }
+}
 
 /* ---------------------------------- */
 /* 💻 Small Laptop (768px - 1023px) */
